@@ -28,6 +28,8 @@
     
     [self setData];
     
+    self.title = @"Language";
+    
     /*[[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(setData)
                                                  name: GTDataImporterNotificationAuthTokenUpdateStarted

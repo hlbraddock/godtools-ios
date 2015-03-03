@@ -80,6 +80,13 @@
     self.translatorSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
     [self.translatorSwitch addTarget:self action:@selector(translatorSwitchToggled) forControlEvents:UIControlEventTouchUpInside];
     
+    // Set the back button without text, this applies to the next screen navigated to which is the languages view
+    self.navigationItem.backBarButtonItem =
+    [[UIBarButtonItem alloc] initWithTitle:@""
+                                      style:UIBarButtonItemStyleBordered
+                                     target:nil
+                                     action:nil];
+     
 //updated when there are changes in drafts, might not be necessarily needed here
 //    if([AFNetworkReachabilityManager sharedManager].reachable){
 //        [[GTDataImporter sharedImporter]updateMenuInfo];
