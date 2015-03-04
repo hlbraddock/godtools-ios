@@ -135,6 +135,10 @@
                                                object:nil];
     
     [self checkPhonesLanguage];
+    
+    // set navigation bar background color
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.67 green:0.93 blue:0.93 alpha:1.0]];
+    [self.navigationController.navigationBar setTranslucent:NO]; // required for iOS7
 }
 
 -(void)viewWillAppear:(BOOL)animated{
